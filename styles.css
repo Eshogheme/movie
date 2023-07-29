@@ -107,7 +107,7 @@ header h2 .h2{
 
 
 #banner{
-  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Avengers\ Endgame.jpg);
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/Avengers\ Endgame.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 400px;
@@ -166,7 +166,7 @@ header h2 .h2{
 
 .top-picks-images{
  display: grid;
- grid-template-columns: repeat(6,205px);
+ grid-template-columns: repeat(6,297px);
  gap: 1.5rem;
 }
 .top-picks-images .img {
