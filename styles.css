@@ -2,18 +2,21 @@
   box-sizing: border-box;
 }
 
+
 body{
   overflow-x: hidden;
   margin: 0;
   background-color: black;
   color: white;
+  -webkit-overflow-scrolling: touch;
 }
 
 header{
   display: grid;
-  grid-template-columns: repeat(2,80%);
+  grid-template-columns: repeat(2, 100%);
   margin: 2px;
   padding: 10px;
+  position: relative;
   /* position: fixed; */
   /* background-color: black;
   background-size: cover; */
@@ -49,10 +52,11 @@ header h2 .h2{
   background-color: black;
   color: white;
   border: none;
-  position: relative;
-  top: 15px;
+  position: absolute;
+  top: 30px;
   right: 7px;
 }
+
 .button:hover{
   cursor: pointer;
 }
@@ -91,6 +95,7 @@ header h2 .h2{
   top: 200px;
   margin: auto;
   padding: 5px;
+  cursor: pointer;
 }
 
 .right{
@@ -107,7 +112,7 @@ header h2 .h2{
 
 
 #banner{
-  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/images/Avengers\ Endgame.jpg);
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../movie-main/images/Avengers\ Endgame.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 400px;
@@ -180,7 +185,7 @@ header h2 .h2{
 }
 
 #h4{
-  margin-left:8vw ;
+  margin-left: 8vw;
   font-size:20px;
   font-family: 'Inter', sans-serif;
   width: 100vw;
@@ -190,8 +195,18 @@ header h2 .h2{
 
 .top-ten{
   display: grid;
-  grid-template-columns: repeat(10,40%);
+  grid-template-columns: repeat(10,100%);
   margin: 5px;
+  transition: 0.5s ease-out;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+.top-ten ol{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(10,380px);
+  padding: 0;
 }
 .top-ten .img2{
   width:50%;
@@ -218,8 +233,6 @@ header h2 .h2{
 
 @media screen and (max-width:769px){
   body{
-
-    overflow-x: hidden;
     overflow-x: hidden;
     margin: 0;
     background-color: black;
@@ -278,6 +291,10 @@ header h2 .h2{
   font-family:'Bebas Neue', sans-serif ;
 }
 
+#button{
+  width: 30%;
+}
+
 .angles{
   border: none;
   border-radius: 50%;
@@ -303,11 +320,11 @@ header h2 .h2{
 }
 
 #banner{
-  /* background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Avengers\ Endgame.jpg); */
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../movie-main/images/Avengers-endgame-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 400px;
-  width: 100%;
+  width: 80%;
   /* height: 200vh;  */
   position: relative;
   top: -50px;
@@ -358,18 +375,21 @@ header h2 .h2{
 
  
 .top-picks{
-  margin-left:8vw ;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   font-size:25px;
   font-family: 'Inter', sans-serif;
   width: 100vw;
   position: relative;
+  overflow-x: scroll;
   top: -25px;
 }
 
 .top-picks-images{
  display: grid;
- grid-template-columns: repeat(6,104px);
+ grid-template-columns: repeat(12,200px);
  gap: 1.5rem;
+ -webkit-overflow-scrolling: touch;
 }
 .top-picks-images .img {
   width: 120%;
@@ -379,7 +399,7 @@ header h2 .h2{
 }
 
 #h4{
-  margin-left:8vw ;
+  margin-left:8vw;
   font-size:25px;
   font-family: 'Inter', sans-serif;
   width: 100%;
@@ -387,7 +407,10 @@ header h2 .h2{
   top: -10px;
 }
 
-
+.Top-tens{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .top-ten{
   display: grid;
   grid-template-columns: repeat(10,40%);
